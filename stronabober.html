@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f0;
+            text-align: center;
+        }
+        .question {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 300px;
+            border-radius: 20px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no-button {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <img src="file-XHpcsbnBpt7dPUiDrWXW84.jpg" alt="Funny face">
+        <h1 class="question">Czy zostaniesz moją walentynką?</h1>
+        <div class="button-container">
+            <button class="yes-button" onclick="sayYes()">Tak</button>
+            <button class="no-button" onclick="sayNo()">Nie</button>
+        </div>
+    </div>
+
+    <script>
+        function sayYes() {
+            document.getElementById('content').innerHTML = `
+                <img src="file-MENb8KXxDv7i1Gzdj2JufA.jpg" alt="Happy reaction">
+                <h1>JUPIIIIIII!!!!</h1>
+            `;
+        }
+
+        function sayNo() {
+            document.getElementById('content').innerHTML = `
+                <img src="file-G3gNbXeHevJFCAsyRDu4nt.jpeg" alt="Sad reaction">
+                <h1>:(</h1>
+            `;
+        }
+    </script>
+</body>
+</html>
